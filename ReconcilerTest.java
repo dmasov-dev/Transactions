@@ -86,9 +86,6 @@ class Reconciler {
 
 public class ReconcilerTest {
 
-    private static int testCount = 0;
-    private static int successCount = 0;
-
     public static void main(String[] args) {
         Reconciler reconciler = new Reconciler();
 
@@ -110,15 +107,10 @@ public class ReconcilerTest {
         // TEST CASE 6: Multiple IDs with different statuses and IDs
         testComplexMix(reconciler);
 
-        System.out.println("\n--- Test Summary ---");
-        System.out.println("Total tests run: " + testCount);
-        System.out.println("Tests passed: " + successCount);
     }
 
     private static void assertTrue(boolean condition, String message) {
-        testCount++;
         if (condition) {
-            successCount++;
             System.out.println("[PASS] " + message);
         } else {
             System.err.println("[FAIL] " + message);
@@ -281,4 +273,5 @@ public class ReconcilerTest {
     }
 
 }
+
 
