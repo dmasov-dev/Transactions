@@ -113,11 +113,6 @@ public class ReconcilerTest {
         System.out.println("\n--- Test Summary ---");
         System.out.println("Total tests run: " + testCount);
         System.out.println("Tests passed: " + successCount);
-        if (testCount == successCount) {
-            System.out.println("RESULT: ALL TESTS PASSED SUCCESSFULLY.");
-        } else {
-            System.err.println("RESULT: FAILED " + (testCount - successCount) + " TEST(S).");
-        }
     }
 
     private static void assertTrue(boolean condition, String message) {
@@ -286,3 +281,4 @@ public class ReconcilerTest {
     }
 
 }
+
